@@ -1,6 +1,6 @@
-# 🌳 Árvore Theme for VS Code / Kiro
+# 🌳 Árvore Theme
 
-A color theme for VS Code and Kiro based on [Árvore](https://arvore.com.br)'s **Bonsai Design System**.
+A color theme based on [Árvore](https://arvore.com.br)'s **Bonsai Design System**. Available for multiple IDEs, terminals, and agents.
 
 ## Variants
 
@@ -32,6 +32,56 @@ cp -r arvore-theme ~/.kiro/extensions/arvore-theme
 ```
 
 Restart your editor, then select the theme with `Cmd+K Cmd+T` (macOS) or `Ctrl+K Ctrl+T` (Linux/Windows).
+
+### OpenCode
+
+Copy the theme files to your OpenCode themes directory:
+
+```bash
+mkdir -p ~/.config/opencode/themes
+cp agents/opencode/arvore-dark.json ~/.config/opencode/themes/
+cp agents/opencode/arvore-light.json ~/.config/opencode/themes/
+```
+
+Then select it with `/theme` in the TUI, or set it in your `tui.json`:
+
+```json
+{
+  "theme": "arvore-dark"
+}
+```
+
+### Kitty
+
+Copy the theme file and include it in your `kitty.conf`:
+
+```bash
+cp terminals/kitty/arvore-dark.conf ~/.config/kitty/
+```
+
+Then add to your `~/.config/kitty/kitty.conf`:
+
+```
+include arvore-dark.conf
+```
+
+Replace `arvore-dark` with `arvore-light` for the light variant.
+
+### Ghostty
+
+Copy the theme file to your Ghostty themes directory:
+
+```bash
+mkdir -p ~/.config/ghostty/themes
+cp terminals/ghostty/arvore-dark ~/.config/ghostty/themes/
+cp terminals/ghostty/arvore-light ~/.config/ghostty/themes/
+```
+
+Then set it in your `~/.config/ghostty/config`:
+
+```
+theme = arvore-dark
+```
 
 ## License
 

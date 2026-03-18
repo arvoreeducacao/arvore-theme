@@ -21,7 +21,7 @@ A color theme based on [Árvore](https://arvore.com.br)'s **Bonsai Design System
 
 ## Install
 
-### From source
+### VS Code / Kiro
 
 ```bash
 # VS Code

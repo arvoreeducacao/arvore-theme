@@ -1,0 +1,27 @@
+{
+  "name": "arvore-theme",
+  "displayName": "Árvore Theme",
+  "description": "VS Code theme based on Árvore's Bonsai Design System",
+  "version": "0.1.0",
+  "publisher": "arvore",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Árvore Light",
+        "uiTheme": "vs",
+        "path": "./themes/arvore-light.json"
+      },
+      {
+        "label": "Árvore Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/arvore-dark.json"
+      }
+    ]
+  }
+}

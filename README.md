@@ -83,6 +83,8 @@ Then set it in your `~/.config/ghostty/config`:
 theme = arvore-dark
 ```
 
+Replace `arvore-dark` with `arvore-light` for the light variant.
+
 ## License
 
 [MIT](LICENSE)
